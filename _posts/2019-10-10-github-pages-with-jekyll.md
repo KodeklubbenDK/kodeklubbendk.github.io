@@ -23,6 +23,11 @@ see the setup of the bash profile - maybe not usefull when using this setup. jek
 
 add to Gemfile -> `gem 'jekyll', '3.8.5'`
 
+{% highlight ruby %}
+bundle install
+bundle exec jekyll new .
+{% endhighlight %}
+
 `bundle install` or just `bundle`
 
 `bundle exec jekylll new .` maybe with use of --force at the end `bundle exec jekyll new . --force` this will override and update the gemfile along with creation of all the needed jekyll files.
