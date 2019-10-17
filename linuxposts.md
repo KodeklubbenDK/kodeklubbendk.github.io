@@ -4,12 +4,9 @@ title: Linux
 permalink: /linux/
 categories: [linux]
 ---
-
-{% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
+<h3>{{ page.category }}</h3>
+{% for posts in site.categories[page.category] %}
   <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+      <li><span>{{ post.date | date_to_string }} - </span> <a href="{{ post.url }}">{{ post.title }}</a></li>
   </ul>
 {% endfor %}
