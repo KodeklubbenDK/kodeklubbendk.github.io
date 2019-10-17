@@ -28,7 +28,7 @@ collections:
 baseurl: "" 
 
 # The hostname & protocol for your site, e.g. http://example.com
-url: "http://kodeklubbendk.github.io"
+url: # "http://kodeklubbendk.github.io"
 
 github_username:  kodeklubbenDK
 
