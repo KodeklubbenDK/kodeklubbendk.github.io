@@ -1,5 +1,5 @@
 ---
-initials: mkr
+short_name: mkr
 name: Mads Steiner Kristensen
 position: Founder
 ---

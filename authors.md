@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Linux
-permalink: /linux/
-categories: [linux]
+title: Authors
+permalink: /authors/
+categories: [authors]
 ---
 
 <ul>
