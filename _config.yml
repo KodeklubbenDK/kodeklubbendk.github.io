@@ -25,6 +25,14 @@ collections:
   authors:
     output: true
 
+defaults: 
+  -
+    scope: 
+      path: ""
+      type: "authors"
+    values: 
+      layout: "author"
+
 # The subpath of your site, e.g. /blog
 baseurl: "" 
 
