@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with linux
+title: "Getting started with linux"
 date: 2019-10-18 13:40:28 +0200
 categories: linux
 ---
