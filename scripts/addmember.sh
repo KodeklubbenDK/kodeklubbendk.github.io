@@ -1,5 +1,5 @@
 #!/bin/bash
-# Testing Script
+# Add member to collection in yaml file 
 
 read -p "name: " MEMBER_NAME
 read -p "github: " GITHUB_ACCOUNT
