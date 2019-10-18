@@ -3,31 +3,31 @@
   "0": {
     "title": "",
     "content": "404 . Page not found :( . The requested page could not be found. .",
-    "url": "/404.html",
+    "url": "http://localhost:4000/404.html",
     "relUrl": "/404.html"
   }
   ,"1": {
     "title": "AboutTest",
     "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
-    "url": "/about/",
+    "url": "http://localhost:4000/about/",
     "relUrl": "/about/"
   }
   ,"2": {
     "title": "Authors",
     "content": "Mads Steiner Kristensen . Founder . Mads is an avid fruit grower based in the south of france . . | .",
-    "url": "/authors/",
+    "url": "http://localhost:4000/authors/",
     "relUrl": "/authors/"
   }
   ,"3": {
     "title": "",
     "content": "Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
-    "url": "/",
+    "url": "http://localhost:4000/",
     "relUrl": "/"
   }
   ,"4": {
     "title": "Linux",
     "content": ". 17 Oct 2019 - Getting started with linux | . 10 Oct 2019 - Welcome to Jekyll! | . jekyll . Welcome to Jekyll! | Github pages with Jekyll setup | . update . Github pages with Jekyll setup | . linux . Getting started with linux | Welcome to Jekyll! | .",
-    "url": "/linux/",
+    "url": "http://localhost:4000/linux/",
     "relUrl": "/linux/"
   }
   
