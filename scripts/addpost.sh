@@ -44,3 +44,7 @@ POST_TITLE_REPLACED=${POST_TITLE_LOWER//" "/-}
 
 cp test.md $FILE_DATE-$POST_TITLE_REPLACED".md"
 rm -rf $FILE_NAME".md"
+
+# For future use update this script 
+# to take a md file from draft folder and publish into 
+# _posts folder
