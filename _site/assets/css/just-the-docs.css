@@ -2171,9 +2171,15 @@ html, body { font-family: 'Montserrat', sans-serif; }
 
 .side-bar { width: auto; }
 .side-bar .site-header { border-bottom: none; }
-.side-bar .site-title { color: #FFFFFF; font-size: 2rem !important; font-weight: bold; padding: 0; padding-left: 1rem; }
+.side-bar .site-header button.menu-button { color: #FFFFFF; background: #333333; }
+.side-bar .site-header .site-title { color: #FFFFFF; font-size: 2rem !important; font-weight: bold; padding: 0; padding-left: 1rem; }
+.side-bar nav { display: flex; flex-direction: column; height: 100%; }
+.side-bar nav ul.navigation-list { display: flex; flex-direction: column; height: 100%; }
 .side-bar nav ul.navigation-list li.navigation-list-item { padding: 0.2rem 0.3rem; border-radius: 0.3rem; }
 .side-bar nav ul.navigation-list li.navigation-list-item:hover { background: #404040; }
+.side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list .navigation-list-link:hover { color: white; }
+.side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list li { display: block; }
+.side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list li .navigation-list-item:hover a.navigation-list-link { color: #FFFFFF; }
 .side-bar footer.site-footer { display: none; }
 
 .navigation-list-link { color: #FFFFFF; }
