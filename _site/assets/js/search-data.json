@@ -7,7 +7,7 @@
     "relUrl": "/404.html"
   }
   ,"1": {
-    "title": "AboutTest",
+    "title": "About",
     "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
     "url": "http://localhost:4000/about/",
     "relUrl": "/about/"
@@ -26,7 +26,7 @@
   }
   ,"4": {
     "title": "Linux",
-    "content": ". 17 Oct 2019 - Getting started with linux | . 10 Oct 2019 - Welcome to Jekyll! | . jekyll . Welcome to Jekyll! | Github pages with Jekyll setup | . update . Github pages with Jekyll setup | . linux . Getting started with linux | Welcome to Jekyll! | .",
+    "content": ". 17 Oct 2019 Getting started with linux | . 10 Oct 2019 Welcome to Jekyll! | . jekyll . 10 Oct 2019 Welcome to Jekyll! | 10 Oct 2019 Github pages with Jekyll setup | . update . 10 Oct 2019 Github pages with Jekyll setup | . linux . 17 Oct 2019 Getting started with linux | 10 Oct 2019 Welcome to Jekyll! | .",
     "url": "http://localhost:4000/linux/",
     "relUrl": "/linux/"
   }

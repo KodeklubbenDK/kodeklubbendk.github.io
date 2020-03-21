@@ -1,3 +1,144 @@
-.site-header {
-    border-bottom: none;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+$carbon: #333333;
+$oily-steel: #9BA8A8;
+$arctic-fox: #EBEBE7;
+$foggy-dew: #C8CEC4;
+$white: #FFFFFF;
+
+$aubergine: #452B30;
+$brownish-purple: #74404C;
+$parchment: #F3ECD8;
+$watercross-pesto: #C7C79E;
+
+$pale-beryl: #95DDDA;
+
+.side-bar {
+    width: auto;
+
+    .site-header {
+        border-bottom: none;
+    }
+
+    .site-title {
+        color: $white;
+        font-size: 2rem !important;
+        font-weight: bold;
+        padding: 0;
+        padding-left: 1rem;
+    }
+
+    nav {
+        ul.navigation-list {
+            li.navigation-list-item {
+                padding: 0.2rem 0.3rem;
+                border-radius: 0.3rem;
+            }
+
+            li.navigation-list-item:hover {
+                background: lighten($carbon, 5%);
+
+                .navigation-list-link {}
+            }
+        }
+    }
+
+    footer.site-footer {
+        display: none;
+    }
+}
+
+.navigation-list-link {
+    color: $white;
+
+    &.active {
+        color: $pale-beryl;
+
+        &::before {
+            content: "";
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 0.3rem;
+            background: lighten($carbon, 10%);
+            position: absolute;
+            margin-top: 0.25rem;
+            margin-left: -1rem;
+        }
+    }
+}
+
+figure.highlight,
+pre.highlight {
+    /*background: #F5F6FA;*/
+    background: $arctic-fox;
+    border-radius: 0.3rem;
+
+    code {
+        background: $arctic-fox;
+    }
+}
+
+.page-content {
+    h3 {
+        font-weight: bold;
+        text-transform: capitalize !important;
+    }
+
+    ul {
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            &.author-item {
+                flex-direction: column;
+            }
+
+            &:hover {
+                span:first-child {
+                    background: $carbon;
+                    color: $white;
+
+                    &+a {
+                        &:not([class]) {
+                            color: $pale-beryl;
+                        }
+                    }
+                }
+            }
+
+            &::before {
+                content: none;
+            }
+
+            span:first-child {
+                padding: 0.15rem 0.3rem;
+                border-radius: 0.3rem;
+                background: $arctic-fox;
+                color: #586E75;
+                font-size: 8px;
+
+                &+a {
+                    margin-left: 0.5rem;
+                    text-decoration: none;
+                    background: none;
+
+                    &:not([class]) {
+                        background: none;
+
+                        &:hover {
+                            color: $pale-beryl;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
