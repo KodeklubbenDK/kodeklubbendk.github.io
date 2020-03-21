@@ -53,15 +53,21 @@ $pale-beryl: #95DDDA;
                 padding: 0.2rem 0.3rem;
                 border-radius: 0.3rem;
 
-                &:hover {
-                    background: lighten($carbon, 5%);
+                a {
+                    padding: 0.4rem 0.3rem;
+                    border-radius: 0.3rem;
+                    font-weight: 800;
+
+                    &:hover {
+                        background: lighten($carbon, 5%);
+                    }
                 }
 
-                // &:last-child {
-                //     position: absolute;
-                //     bottom: 1rem;
-                //     width: 12.5rem;
-                // }
+                &:last-child {
+                    position: absolute;
+                    bottom: 1rem;
+                    width: 12.5rem;
+                }
 
                 ul.navigation-list-child-list {
                     .navigation-list-link:hover {
@@ -71,17 +77,12 @@ $pale-beryl: #95DDDA;
                     li {
                         display: block;
 
-                        // &:last-child {
-                        //     all: unset;
-                        // }
+                        &:last-child {
+                            all: unset;
+                        }
 
-                        .navigation-list-item {
-
-                            &:hover {
-                                a.navigation-list-link {
-                                    color: $white;
-                                }
-                            }
+                        &.navigation-list-item::before {
+                            content: none;
                         }
                     }
                 }

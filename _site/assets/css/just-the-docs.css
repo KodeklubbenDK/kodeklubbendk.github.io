@@ -2176,10 +2176,13 @@ html, body { font-family: 'Montserrat', sans-serif; }
 .side-bar nav { display: flex; flex-direction: column; height: 100%; }
 .side-bar nav ul.navigation-list { display: flex; flex-direction: column; height: 100%; }
 .side-bar nav ul.navigation-list li.navigation-list-item { padding: 0.2rem 0.3rem; border-radius: 0.3rem; }
-.side-bar nav ul.navigation-list li.navigation-list-item:hover { background: #404040; }
+.side-bar nav ul.navigation-list li.navigation-list-item a { padding: 0.4rem 0.3rem; border-radius: 0.3rem; font-weight: 800; }
+.side-bar nav ul.navigation-list li.navigation-list-item a:hover { background: #404040; }
+.side-bar nav ul.navigation-list li.navigation-list-item:last-child { position: absolute; bottom: 1rem; width: 12.5rem; }
 .side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list .navigation-list-link:hover { color: white; }
 .side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list li { display: block; }
-.side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list li .navigation-list-item:hover a.navigation-list-link { color: #FFFFFF; }
+.side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list li:last-child { all: unset; }
+.side-bar nav ul.navigation-list li.navigation-list-item ul.navigation-list-child-list li.navigation-list-item::before { content: none; }
 .side-bar footer.site-footer { display: none; }
 
 .navigation-list-link { color: #FFFFFF; }
