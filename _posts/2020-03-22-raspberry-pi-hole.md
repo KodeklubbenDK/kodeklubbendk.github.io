@@ -31,16 +31,19 @@ published: true
 
 ## Prerequisites
 
-**Raspberry pi zero w v.1.1**
+The only thing you will need in order to implement a pi-hole is a Raspberry Pi. Throughout this post i will be using a Raspberry Pi Zero W (version 1.1) from 2017.
+
+If you have no experience using a Raspberry Pi or forgot how to set it up - consider reading my post about [Getting started with Raspberry Pi Zero W.]({{ site.baseurl }})
 
 See [About]({{ site.baseurl }}/about)
-[Github][github-account]
-[Organization][github-organization].
-[Pi-hole][pi-hole].
+[Github][github-account]{:target="_blank"}
+[Organization][github-organization]{:target="_blank"}
+[Pi-hole][pi-hole-docs]{:target="_blank"}
 
 [github-account]: https://github.com/madssteiner
 [github-organization]:   https://github.com/kodeklubbendk
-[pi-hole]: https://talk.jekyllrb.com/
+[pi-hole-docs]: https://docs.pi-hole.net/main/basic-install/
+[pi-hole-git]: https://github.com/pi-hole/pi-hole/#one-step-automated-install
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus metus vehicula dui pharetra, non sagittis sapien viverra. Etiam sollicitudin magna non sem pretium posuere et in lacus. Morbi viverra sem ipsum. Aliquam augue neque, placerat et leo nec, accumsan volutpat lorem. Integer et purus tempor, eleifend lacus eget, euismod tortor. Nulla facilisi. Vivamus lorem arcu, vestibulum ac tincidunt nec, posuere ut ex. Quisque ut sollicitudin odio, consequat pretium leo. Sed sed nibh eget enim pharetra pellentesque.
 
