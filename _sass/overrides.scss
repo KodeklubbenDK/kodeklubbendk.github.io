@@ -183,3 +183,39 @@ pre.highlight {
         }
     }
 }
+
+
+
+// BLOG POST STYLING
+
+div.post-header {
+
+    h1,
+    h3,
+    h3,
+    h4,
+    h5 {
+        margin: 0;
+    }
+
+    h1,
+    h3 {
+        margin: 1rem 0rem;
+    }
+
+    div.post-info {
+        display: flex;
+        flex-direction: row;
+
+        h5 {
+            color: $oily-steel;
+            font-size: 12px !important;
+            font-weight: bold;
+            margin-right: 0.5rem;
+
+            &.pipe {
+                color: $oily-steel;
+            }
+        }
+    }
+}

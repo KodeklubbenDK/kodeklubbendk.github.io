@@ -1,46 +1,27 @@
 ---
 layout: post
-title: Raspberry Pi-hole
-subtitle: A DNS level adblocker for your private router
-date: 2020-03-22  0:30:50 +0100
-categories: raspberry linux adblock zero wifi
+title: Customizing Bash Terminal
+date: 2020-03-22 10:43:41 +0100
+categories: linux bash terminal
 author: mkr
 published: true
 ---
+<div>
+    {% capture words %}
+        {{ page.content | number_of_words | minus: 180}}
+    {% endcapture %}
 
-{% assign director = site.authors | where:"short_name", page.author | first %}
-{% capture words %}
-    {{ page.content | number_of_words | minus: 180}}
-{% endcapture %}
-
-<div class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <h3 class="post-subtitle">{{ page.subtitle }}</h3>
-    <div class="post-info">
-        <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
-        <h5 class="pipe">|</h5>
-            {% unless words contains "-" %}
+    {% unless words contains "-" %}
         <h5>{{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}</h5>
     {% endunless %}
-        <h5 class="pipe">|</h5>
-        <h5>Written by {{ director.name }}</h5>
-    </div>
+</div>
+<div>
+    {{ page.date | date: "%B %-d, %Y" }}
 </div>
 
-<!-- CONTENT STARTS BELOW -->
+{% assign director = site.authors | where:"short_name", page.author | first %}
 
-## Prerequisites
-
-**Raspberry pi zero w v.1.1**
-
-See [About]({{ site.baseurl }}/about)
-[Github][github-account]
-[Organization][github-organization].
-[Pi-hole][pi-hole].
-
-[github-account]: https://github.com/madssteiner
-[github-organization]:   https://github.com/kodeklubbendk
-[pi-hole]: https://talk.jekyllrb.com/
+#### Author: {{ director.name }}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus metus vehicula dui pharetra, non sagittis sapien viverra. Etiam sollicitudin magna non sem pretium posuere et in lacus. Morbi viverra sem ipsum. Aliquam augue neque, placerat et leo nec, accumsan volutpat lorem. Integer et purus tempor, eleifend lacus eget, euismod tortor. Nulla facilisi. Vivamus lorem arcu, vestibulum ac tincidunt nec, posuere ut ex. Quisque ut sollicitudin odio, consequat pretium leo. Sed sed nibh eget enim pharetra pellentesque.
 
@@ -50,6 +31,15 @@ Aliquam tincidunt pharetra leo. Quisque sollicitudin vulputate tortor et iaculis
 
 Etiam eu efficitur nulla. Curabitur porta mauris vel lacus fermentum, vel convallis tortor imperdiet. Aliquam et mollis mi. Etiam eu urna felis. Fusce sed nisi vitae metus gravida vehicula non eu metus. Quisque sagittis semper tortor, nec vestibulum turpis. Nunc rhoncus felis sapien, quis accumsan sapien pharetra vitae.
 
-Donec dictum, felis vitae rhoncus bibendum, justo velit venenatis lacus, id maximus tortor sapien vel massa. Nullam congue felis pellentesque odio tempor dignissim. Nulla sapien tortor, bibendum vitae leo at, auctor fringilla dui. Phasellus faucibus libero metus, eu egestas lectus mollis quis. Aliquam ac ex luctus, efficitur lorem efficitur, euismod justo. Mauris mollis ipsum dui, et viverra enim mollis a. Nam nunc diam, placerat vel placerat nec, gravida posuere nisl. Nam sit amet sagittis lorem.
+Donec dictum, felis vitae rhoncus bibendum, justo velit venenatis lacus, id maximus tortor sapien vel massa. Nullam congue felis pellentesque odio tempor dignissim. Nulla sapien tortor, bibendum vitae leo at, auctor fringilla dui. Phasellus faucibus libero metus, eu egestas lectus mollis quis. Aliquam ac ex luctus, efficitur lorem efficitur, euismod justo. Mauris mollis ipsum dui, et viverra enim mollis a. Nam nunc diam, placerat vel placerat nec, gravida posuere nisl. Nam sit amet sagittis lorem. 
 
-<!-- SNIPPET OF OTHER RELATED ARTICLES AT BOTTOM -->
+See [About]({{ site.baseurl }}/about)
+Check out the [Github Account][github-account] for more info on how to get the most out of Pi-hole.
+
+File all bugs/feature requests at [Github Organization][github-organization].
+
+If you have questions, you can ask them on [Slack / Discord][other-links-below].
+
+[github-account]: https://github.com/madssteiner
+[github-organization]:   https://github.com/kodeklubbendk
+[other-links-below]: https://talk.jekyllrb.com/

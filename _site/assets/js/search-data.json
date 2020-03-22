@@ -20,25 +20,25 @@
   }
   ,"3": {
     "title": "Utils",
-    "content": "Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
+    "content": "Customizing Bash Terminal | Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
     "url": "http://localhost:4000/docs/utils/",
     "relUrl": "/docs/utils/"
   }
   ,"4": {
     "title": "Home",
-    "content": "Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
+    "content": "Customizing Bash Terminal | Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
     "url": "http://localhost:4000/",
     "relUrl": "/"
   }
   ,"5": {
     "title": "Linux",
-    "content": ". 22 Mar 2020 Raspberry Pi-hole | . 22 Mar 2020 Test Script | . 17 Oct 2019 Getting started with linux | . 10 Oct 2019 Welcome to Jekyll! | .",
+    "content": ". 22 Mar 2020 Customizing Bash Terminal | . 22 Mar 2020 Raspberry Pi-hole | . 22 Mar 2020 Test Script | . 17 Oct 2019 Getting started with linux | . 10 Oct 2019 Welcome to Jekyll! | .",
     "url": "http://localhost:4000/linux/",
     "relUrl": "/linux/"
   }
   ,"6": {
     "title": "Setup",
-    "content": "Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
+    "content": "Customizing Bash Terminal | Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
     "url": "http://localhost:4000/docs/utils/setup.html",
     "relUrl": "/docs/utils/setup.html"
   }

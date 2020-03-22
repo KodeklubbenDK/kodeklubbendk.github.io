@@ -2202,3 +2202,9 @@ figure.highlight code, pre.highlight code { background: #EBEBE7; }
 .page-content ul li span:first-child + a { margin-left: 0.5rem; text-decoration: none; background: none; }
 .page-content ul li span:first-child + a:not([class]) { background: none; }
 .page-content ul li span:first-child + a:not([class]):hover { color: #95DDDA; }
+
+div.post-header h1, div.post-header h3, div.post-header h3, div.post-header h4, div.post-header h5 { margin: 0; }
+div.post-header h1, div.post-header h3 { margin: 1rem 0rem; }
+div.post-header div.post-info { display: flex; flex-direction: row; }
+div.post-header div.post-info h5 { color: #9BA8A8; font-size: 12px !important; font-weight: bold; margin-right: 0.5rem; }
+div.post-header div.post-info h5.pipe { color: #9BA8A8; }
