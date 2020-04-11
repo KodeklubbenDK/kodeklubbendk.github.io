@@ -23,7 +23,8 @@ categories: [authors]
 {% for author in site.authors %}
   <div class="author-card">
     <div class="author-image">
-      <img src="https://via.placeholder.com/100">
+    {% assign avatar = "https://api.adorable.io/avatars/100/id@adorable.io.png" | replace: "id", author.identifier %}
+      <img src="{{ avatar }}" >
     </div>
     <div class="author-title">
       <h3><a href="{{ author.url }}">{{ author.name }}</a></h3>
