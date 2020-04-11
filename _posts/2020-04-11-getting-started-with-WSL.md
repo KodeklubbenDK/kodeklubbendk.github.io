@@ -23,7 +23,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 ```
 
-2. Restart you computer.
+2. Restart your computer.
 
 3. Install Ubuntu from the Microsoft Store:
    
