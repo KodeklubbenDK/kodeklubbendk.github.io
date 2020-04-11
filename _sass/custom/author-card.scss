@@ -1,0 +1,79 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 1rem 0;
+}
+
+
+
+
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+
+    .author-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0.5rem 0.3rem;
+
+        img {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 3rem;
+        }
+    }
+
+    .author-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        h3,
+        h4 {
+            margin: 0;
+            padding: 0.3rem 0;
+        }
+    }
+
+    .author-prestige {
+        margin-top: 0.5rem;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+
+        .award {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            h5 {
+                margin: 0;
+                font-weight: bold;
+                color: #1b1b1c;
+            }
+
+            h6 {
+                margin: 0;
+                color: #666;
+            }
+        }
+    }
+
+    //background-color: #FFF;
+    //background: linear-gradient(#F8F8F8, #FFF);
+    //box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    //border-radius: 0.3rem;
+    //overflow: hidden;
+    //background: linear-gradient(#DE685E, #EE786E);
+
+
+}
