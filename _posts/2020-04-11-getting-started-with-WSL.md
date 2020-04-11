@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Getting started with WSL"
+date: 2020-04-11 14:27:28 +0200
+categories: linux
+---
+
 # Getting started with WSL
 
 Windows Subsystem for Linux (WSL) enables using the Linux terminal within your Windows system. It is more light weight than running a virtual machine. It is terminal only, so it is not the right option if you want to run programme relying on a graphical user interface. However, you can launch the VS Code editor using WSL. WSL is a great light weight Linux developer tool for Windows users.
