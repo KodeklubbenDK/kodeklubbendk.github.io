@@ -120,10 +120,19 @@ pre.highlight {
     background: $arctic-fox;
     border-radius: 0.3rem;
 
+    +p {
+        margin-top: 1em !important;
+    }
+
     code {
         background: $arctic-fox;
     }
 }
+
+// figure.higlight+p {
+//     margin-top: 1em !important;
+//     // THIS IS WHERE I LEFT
+// }
 
 .page-content {
     h3 {
@@ -132,6 +141,13 @@ pre.highlight {
     }
 
     ul {
+
+        &#markdown-toc {
+            li {
+                display: block;
+            }
+        }
+
         li {
             display: flex;
             flex-direction: row;

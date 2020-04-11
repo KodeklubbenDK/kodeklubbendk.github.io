@@ -27,13 +27,52 @@ published: true
     </div>
 </div>
 
+<!-- --- 
+## Table of content
+{:.no_toc}
+* TOC
+{:toc} -->
+
 <!-- CONTENT STARTS BELOW -->
+---
+## Pi-hole
+Pi-hole© is a DNS sinkhole which protects mobile devices and laptops from unwanted content in apps and on webpages. It does not require any client-side software to run on your mobile device or laptop which indeed makes it pretty nice!
+
+In other words Pi-hole is a modern adblocker at DNS level. It is a free and open source project and thereby it makes you the sole person in charge of your own privacy. Pi-hole comes with an easy to use and responsive web interface, from where it is possible to whitelist or blacklist domains that serves you with ads.
+
+Pi-hole can't protect you from all ads since some adservices are dynamic or ads have been embedded directly into content. But overall it would protect against a lot of ads.
 
 ## Prerequisites
-
 The only thing you will need in order to implement a pi-hole is a Raspberry Pi. Throughout this post i will be using a Raspberry Pi Zero W (version 1.1) from 2017.
 
-If you have no experience using a Raspberry Pi or forgot how to set it up - consider reading my post about [Getting started with Raspberry Pi Zero W.]({{ site.baseurl }})
+If you have no experience using a Raspberry Pi or need to freshen it up - consider reading my post about [Getting started with Raspberry Pi Zero W.]({% post_url 2020-03-22-customizing-bash-terminal %}) <!-- LINK TO ANOTHER POST -->
+
+## Installation
+Before following this guide on how to install i would recommend you to take a look at the [offical documentation][pi-hole-docs]. This would be rather helpful in case of my guide being outdated.
+
+### Upgrade Packages
+I recommend you to start by upgrading your packages with the following command.
+
+{% highlight bash %}
+sudo apt-get update && sudo apt-get upgrade
+{% endhighlight %}
+
+### Methods
+It is possible to install Pi-hole by 3 different methods eg. one step automated, cloning the repository or by an installer. I used the one step automated install for easiness but it has a major downside.
+
+{% highlight bash %}
+curl -sSL https://install.pi-hole.net | bash
+{% endhighlight %}
+
+Piping to bash is a controversial topic, as it prevents you from reading code that is about to run on your system which is the major downside by this installation method.
+
+## User Interface
+
+## DNS Settings
+### Device
+### Router
+
+## Landing page (Redirect to /admin)
 
 See [About]({{ site.baseurl }}/about)
 [Github][github-account]{:target="_blank"}
@@ -45,14 +84,5 @@ See [About]({{ site.baseurl }}/about)
 [pi-hole-docs]: https://docs.pi-hole.net/main/basic-install/
 [pi-hole-git]: https://github.com/pi-hole/pi-hole/#one-step-automated-install
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus metus vehicula dui pharetra, non sagittis sapien viverra. Etiam sollicitudin magna non sem pretium posuere et in lacus. Morbi viverra sem ipsum. Aliquam augue neque, placerat et leo nec, accumsan volutpat lorem. Integer et purus tempor, eleifend lacus eget, euismod tortor. Nulla facilisi. Vivamus lorem arcu, vestibulum ac tincidunt nec, posuere ut ex. Quisque ut sollicitudin odio, consequat pretium leo. Sed sed nibh eget enim pharetra pellentesque.
-
-Pellentesque vel vehicula ex, id molestie nisl. Nulla convallis interdum lacus, vitae congue risus pharetra eget. Nullam imperdiet hendrerit turpis, dignissim suscipit orci eleifend ac. Vestibulum eu elementum turpis. Sed feugiat tempor consequat. Curabitur sed eros ornare, porttitor mauris ac, condimentum nunc. Aliquam venenatis risus sed pulvinar lobortis.
-
-Aliquam tincidunt pharetra leo. Quisque sollicitudin vulputate tortor et iaculis. Duis condimentum nulla ultricies diam molestie porta sit amet non metus. Aliquam erat volutpat. Suspendisse lacinia porta justo at blandit. Integer pellentesque, nulla at vehicula elementum, quam ex dictum quam, quis mattis turpis est ac ipsum. Ut ac turpis neque. Vestibulum non purus sed lectus lacinia ullamcorper in in justo. Sed bibendum arcu at eros luctus, a feugiat mi volutpat. Proin ac tortor non quam aliquet dictum. Etiam blandit odio neque, quis commodo lectus gravida ac.
-
-Etiam eu efficitur nulla. Curabitur porta mauris vel lacus fermentum, vel convallis tortor imperdiet. Aliquam et mollis mi. Etiam eu urna felis. Fusce sed nisi vitae metus gravida vehicula non eu metus. Quisque sagittis semper tortor, nec vestibulum turpis. Nunc rhoncus felis sapien, quis accumsan sapien pharetra vitae.
-
-Donec dictum, felis vitae rhoncus bibendum, justo velit venenatis lacus, id maximus tortor sapien vel massa. Nullam congue felis pellentesque odio tempor dignissim. Nulla sapien tortor, bibendum vitae leo at, auctor fringilla dui. Phasellus faucibus libero metus, eu egestas lectus mollis quis. Aliquam ac ex luctus, efficitur lorem efficitur, euismod justo. Mauris mollis ipsum dui, et viverra enim mollis a. Nam nunc diam, placerat vel placerat nec, gravida posuere nisl. Nam sit amet sagittis lorem.
-
 <!-- SNIPPET OF OTHER RELATED ARTICLES AT BOTTOM -->
+<!-- POST ABOUT USING PI HOLE WITH NGINX -->
