@@ -5,7 +5,7 @@ subtitle: A DNS level adblocker for your private router
 date: 2020-03-22  0:30:50 +0100
 categories: raspberry linux adblock zero wifi
 author: mkr
-published: true
+published: false
 ---
 
 {% assign director = site.authors | where:"short_name", page.author | first %}

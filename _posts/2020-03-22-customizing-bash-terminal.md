@@ -4,7 +4,7 @@ title: Customizing Bash Terminal
 date: 2020-03-22 10:43:41 +0100
 categories: linux bash terminal
 author: mkr
-published: true
+published: false
 ---
 <div>
     {% capture words %}
