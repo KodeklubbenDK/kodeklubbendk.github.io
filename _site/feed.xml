@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-22T12:46:22+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kodeklubben</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Customizing Bash Terminal</title><link href="http://localhost:4000/linux/bash/terminal/2020/03/22/customizing-bash-terminal.html" rel="alternate" type="text/html" title="Customizing Bash Terminal" /><published>2020-03-22T10:43:41+01:00</published><updated>2020-03-22T10:43:41+01:00</updated><id>http://localhost:4000/linux/bash/terminal/2020/03/22/customizing-bash-terminal</id><content type="html" xml:base="http://localhost:4000/linux/bash/terminal/2020/03/22/customizing-bash-terminal.html">&lt;div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-11T17:13:17+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kodeklubben</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Getting started with WSL</title><link href="http://localhost:4000/linux/2020/04/11/getting-started-with-WSL.html" rel="alternate" type="text/html" title="Getting started with WSL" /><published>2020-04-11T14:27:28+02:00</published><updated>2020-04-11T14:27:28+02:00</updated><id>http://localhost:4000/linux/2020/04/11/getting-started-with-WSL</id><content type="html" xml:base="http://localhost:4000/linux/2020/04/11/getting-started-with-WSL.html">&lt;div class=&quot;post-header&quot;&gt;
+    &lt;h1 class=&quot;post-title&quot;&gt;Getting started with WSL&lt;/h1&gt;
+    &lt;h3 class=&quot;post-subtitle&quot;&gt;Windows Subsystem for Linux&lt;/h3&gt;
+    &lt;div class=&quot;post-info&quot;&gt;
+        &lt;h5&gt;April 11, 2020&lt;/h5&gt;
+        &lt;h5 class=&quot;pipe&quot;&gt;|&lt;/h5&gt;
+            
+        &lt;h5&gt;2 minutes to read&lt;/h5&gt;
+    
+        &lt;h5 class=&quot;pipe&quot;&gt;|&lt;/h5&gt;
+        &lt;h5&gt;Written by Simon Grottrup&lt;/h5&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CONTENT STARTS BELOW --&gt;
+
+&lt;h2 id=&quot;wsl&quot;&gt;WSL&lt;/h2&gt;
+
+&lt;p&gt;Windows Subsystem for Linux (WSL) enables using the Linux terminal within your Windows system. It is more light weight than running a virtual machine. It is terminal only, so it is not the right option if you want to run programme relying on a graphical user interface. However, you can launch the VS Code editor using WSL. WSL is a great light weight Linux developer tool for Windows users.&lt;/p&gt;
+
+&lt;h2 id=&quot;wsl-installation&quot;&gt;WSL installation&lt;/h2&gt;
+
+&lt;p&gt;See the official guide by Microsoft or follow the steps below: &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot;&gt;https://docs.microsoft.com/en-us/windows/wsl/install-win10&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Run the following comman as administator in PowerShell:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-PowerShell&quot;&gt;
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Restart your computer.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install Ubuntu from the Microsoft Store:&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.microsoft.com/store/productId/9NBLGGH4MSV6&quot;&gt;https://www.microsoft.com/store/productId/9NBLGGH4MSV6&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Launch Ubuntu and wait for the installation to complete.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter your desired username and password.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;folder-navigation&quot;&gt;Folder navigation&lt;/h2&gt;
+
+&lt;p&gt;Navigate to your Windows folder system by writing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Bash&quot;&gt;
+cd /mnt
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Return to the path of the Linux subsystem by writting:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Bash&quot;&gt;
+cd ~
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;visual-studio-code-using-wsl&quot;&gt;Visual Studio Code using WSL&lt;/h2&gt;
+
+&lt;p&gt;Visual Studio Code (“VS Code” or just “Code” abbreviated) is an editor or light weight IDE. If you have not used it before you can download it here: &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Launch VS Code.&lt;/li&gt;
+  &lt;li&gt;Navigate to the Extensions Marketplace.&lt;/li&gt;
+  &lt;li&gt;Search for “WSL” or “Remote - WSL” in the marketplace or download the extension here: &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl&quot;&gt;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Once installed you can now launch it from &lt;code class=&quot;highlighter-rouge&quot;&gt;View&amp;gt;Command Palette...&lt;/code&gt; the shortcut for opening it is &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+Shift+P&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;The Comman Palette should now seachable in a field in top of the VS Code Window. A &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; should appear in the start of the search field.&lt;/li&gt;
+  &lt;li&gt;Search for “Remote-WSL: New Window” and press enter once it has been selected.&lt;/li&gt;
+  &lt;li&gt;Launch the terminal within VS Code to check that you are within the WSL environment. Open it using hte menu in &lt;code class=&quot;highlighter-rouge&quot;&gt;View&amp;gt;Terminal&lt;/code&gt; or by using the shortcut &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+æ&lt;/code&gt; (Danish keyboards).&lt;/li&gt;
+  &lt;li&gt;You should now see a Bash terminal where the name you chose in the WSL installation step should appear.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>sigr</name></author><summary type="html"></summary></entry><entry><title type="html">Customizing Bash Terminal</title><link href="http://localhost:4000/linux/bash/terminal/2020/03/22/customizing-bash-terminal.html" rel="alternate" type="text/html" title="Customizing Bash Terminal" /><published>2020-03-22T10:43:41+01:00</published><updated>2020-03-22T10:43:41+01:00</updated><id>http://localhost:4000/linux/bash/terminal/2020/03/22/customizing-bash-terminal</id><content type="html" xml:base="http://localhost:4000/linux/bash/terminal/2020/03/22/customizing-bash-terminal.html">&lt;div&gt;
     
 
     

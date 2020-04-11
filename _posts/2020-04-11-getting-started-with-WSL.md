@@ -1,13 +1,35 @@
 ---
 layout: post
 title: "Getting started with WSL"
+subtitle: "Windows Subsystem for Linux"
 date: 2020-04-11 13:27:28 +0100
 categories: linux
 author: sigr
 published: true
 ---
 
-# Getting started with WSL
+{% assign director = site.authors | where:"short_name", page.author | first %}
+{% capture words %}
+    {{ page.content | number_of_words | minus: 180}}
+{% endcapture %}
+
+<div class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h3 class="post-subtitle">{{ page.subtitle }}</h3>
+    <div class="post-info">
+        <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
+        <h5 class="pipe">|</h5>
+            {% unless words contains "-" %}
+        <h5>{{ words | plus: 180 | divided_by: 180 | append: " minutes to read" }}</h5>
+    {% endunless %}
+        <h5 class="pipe">|</h5>
+        <h5>Written by {{ director.name }}</h5>
+    </div>
+</div>
+
+<!-- CONTENT STARTS BELOW -->
+
+## WSL
 
 Windows Subsystem for Linux (WSL) enables using the Linux terminal within your Windows system. It is more light weight than running a virtual machine. It is terminal only, so it is not the right option if you want to run programme relying on a graphical user interface. However, you can launch the VS Code editor using WSL. WSL is a great light weight Linux developer tool for Windows users.
 
