@@ -2,6 +2,7 @@
 layout: post
 title: "Getting started with WSL"
 date: 2020-04-11 14:27:28 +0200
+author: sigr
 categories: linux
 ---
 
