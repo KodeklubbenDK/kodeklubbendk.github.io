@@ -2190,9 +2190,11 @@ html, body { font-family: 'Montserrat', sans-serif; }
 .navigation-list-link.active::before { content: ""; width: 0.6rem; height: 0.6rem; border-radius: 0.3rem; background: #4d4d4d; position: absolute; margin-top: 0.25rem; margin-left: -1rem; }
 
 figure.highlight, pre.highlight { /*background: #F5F6FA;*/ background: #EBEBE7; border-radius: 0.3rem; }
+figure.highlight + p, pre.highlight + p { margin-top: 1em !important; }
 figure.highlight code, pre.highlight code { background: #EBEBE7; }
 
 .page-content h3 { font-weight: bold; text-transform: capitalize !important; }
+.page-content ul#markdown-toc li { display: block; }
 .page-content ul li { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; }
 .page-content ul li.author-item { flex-direction: column; }
 .page-content ul li:hover span:first-child { background: #333333; color: #FFFFFF; }

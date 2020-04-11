@@ -1,46 +1,46 @@
 {
-  
+
   "0": {
     "title": "404",
     "content": "404 . Page not found :( . The requested page could not be found. .",
     "url": "http://localhost:4000/404.html",
     "relUrl": "/404.html"
-  }
-  ,"1": {
+  },
+  "1": {
     "title": "About",
     "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com . You can find the source code for Minima at GitHub: jekyll / minima . You can find the source code for Jekyll at GitHub: jekyll / jekyll .",
     "url": "http://localhost:4000/about/",
     "relUrl": "/about/"
-  }
-  ,"2": {
+  },
+  "2": {
     "title": "Authors",
-    "content": "Mads Steiner Kristensen . Founder . Mads is an avid fruit grower based in the south of france . . | Simon Grottrup . Co-Founder . . | .",
+    "content": "Mads Steiner Kristensen . Founder . 3 . Posts . Developer . Job . 2019 . Member since .",
     "url": "http://localhost:4000/authors/",
     "relUrl": "/authors/"
-  }
-  ,"3": {
+  },
+  "3": {
     "title": "Utils",
     "content": "Getting started with WSL | Customizing Bash Terminal | Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
     "url": "http://localhost:4000/docs/utils/",
     "relUrl": "/docs/utils/"
-  }
-  ,"4": {
+  },
+  "4": {
     "title": "Home",
     "content": "Getting started with WSL | Customizing Bash Terminal | Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  }
-  ,"5": {
+  },
+  "5": {
     "title": "Linux",
     "content": ". 11 Apr 2020 Getting started with WSL | . 22 Mar 2020 Customizing Bash Terminal | . 22 Mar 2020 Raspberry Pi-hole | . 22 Mar 2020 Test Script | . 17 Oct 2019 Getting started with linux | . 10 Oct 2019 Welcome to Jekyll! | .",
     "url": "http://localhost:4000/linux/",
     "relUrl": "/linux/"
-  }
-  ,"6": {
+  },
+  "6": {
     "title": "Setup",
     "content": "Getting started with WSL | Customizing Bash Terminal | Raspberry Pi-hole | Test Script | Getting started with linux | Welcome to Jekyll! | Github pages with Jekyll setup | .",
     "url": "http://localhost:4000/docs/utils/setup.html",
     "relUrl": "/docs/utils/setup.html"
   }
-  
+
 }
